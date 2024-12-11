@@ -148,7 +148,7 @@ public class PortScanner {
             contentPane.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
             contentPane.setTitle("AXIANS PORT SCANNER");
             contentPane.setIconImage(null);
-            Container contentPaneContentPane = contentPane.getContentPane();
+            var contentPaneContentPane = contentPane.getContentPane();
             contentPaneContentPane.setLayout(new MigLayout(
                 "fillx,hidemode 3",
                 // columns
