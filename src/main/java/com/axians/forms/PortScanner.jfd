@@ -1,0 +1,96 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "fillx,hidemode 3"
+			"$columnConstraints": "[fill][fill][fill][fill][fill][fill][fill][fill][fill]"
+			"$rowConstraints": "[][][][][][][][][][][]"
+		} ) {
+			name: "contentPane"
+			"minimumSize": new java.awt.Dimension( 600, 450 )
+			"preferredSize": new java.awt.Dimension( 600, 450 )
+			"defaultCloseOperation": 0
+			"title": "AXIANS PORT SCANNER"
+			"iconImage": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "IpLabel"
+				"text": "IP Address"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ipTextField"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 2 1 6 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ipErrorLabel"
+				"visible": false
+				"foreground": sfield java.awt.Color red
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 2 2,wmax 200"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "fromLabel"
+				"text": "From"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 3"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "fromTextField"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 2 3 6 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "fromPortErrorLabel"
+				"visible": false
+				"foreground": sfield java.awt.Color red
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 2 4"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "toLabel"
+				"text": "To"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 5"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "toTextField"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 2 5 6 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "toPortErrorLabel"
+				"visible": false
+				"foreground": sfield java.awt.Color red
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 2 6"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "resultTable"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 7 7 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "clearButton"
+				"text": "Clear"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 7 8"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "scanButton"
+				"text": "Scan"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 7 8"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 30, 5 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
